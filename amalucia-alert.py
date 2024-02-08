@@ -7,7 +7,7 @@ import time
 async def connect_ais_stream():
 
     async with websockets.connect("wss://stream.aisstream.io/v0/stream") as websocket:
-        subscribe_message = {"APIKey": "95ad04e180b70ef1c1e4f3c1455cecab1ec7d2df",
+        subscribe_message = {"APIKey": "<api key here>",
                              "BoundingBoxes": [[[52.06124712782111, 5.098014078839175], [52.07097541416011, 5.086389440933547]]], # "box" aisstream looks in to find ships
 #                             "FiltersShipMMSI": ["244021929"],  # Filter per ships comment out if you want to view all ships
                              "FilterMessageTypes": ["PositionReport"]} # Message filters 
